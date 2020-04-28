@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* header */
+
+header{
+    background-color: #555;
+    height: 80px;
+}
+
+.logo img{
+    height: 70px;
+    margin: 5px 0px 5px 50px;
+}
+
+.logo h1{
+    margin: 20px;
+    vertical-align: text-bottom;
+    color: #BDFFA7;
+    display: inline-block;
+}
+
+.logo input{
+    margin-bottom: 30px;
+    margin-left: 15%;
+    vertical-align: text-bottom;
+    width: 50%;
+    border: solid ;
+    border-color: #BDFFA7;
+}
+
+.logo i{
+    margin-bottom: 34px;
+    margin-left: 15px;
+    vertical-align: text-bottom;
+    color: #BDFFA7;
+}
+
+/* footer */
+
+footer{
+    background-color: #555;
+    height: 150px;
+}
+
+/* main */
+
+.slice img{
+    width: 70%;
+    margin: 20px 15% 50px 15%;
+    border-radius: 5px;
+}
+
+.redirecciones{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.redirecciones h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.enfermedades{
+    display: inline-block;
+    margin: 7.5%;
+}
+
+.vacunas{
+    display: inline-block;
+    margin: 7.5%;
+}
+
+.hospitales{
+    display: inline-block;
+    margin: 7.5%;
+}
+
+.enfermedades i{
+    font-size: 7em;
+    color: #555;
+    width: 20%;
+    padding-bottom: 15%;
+}
+
+.vacunas i{
+    font-size: 7em;
+    color: #555;
+    width: 20%;
+    padding-bottom: 15%;
+}
+
+.hospitales i{
+    font-size: 7em;
+    color: #555;
+    width: 20%;
+    padding-bottom: 15%;
+}
+
+.enfermedades i:hover{
+    color: #BDFFA7;
+}
+
+.vacunas i:hover{
+    color: #BDFFA7;
+}
+
+.hospitales i:hover{
+    color: #BDFFA7;
+}
+
+.llamaAl{
+    height: 177px;
+    background-color: rgb(189, 255,  167, 0.5);
+    margin: 5% 15% 10% 15%;
+    border: solid #555;
+    border-radius: 5px;
+    color: #555;
+    padding: 20px;
+}
+
+.llamaAl p{
+    text-align: center;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.llamaAl i{
+    font-size: 4.5em;
+}
+
+.tel span{
+    font-size: 4.5em;
+}
+
+.siTenesSintomas{
+    vertical-align: middle;
+    height: 100%;
+    margin-right: 20px;
+}
+
