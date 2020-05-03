@@ -1,0 +1,102 @@
+.menu{
+    height: 40px;
+    background: #B5B5B5;
+}
+
+.ulMenu{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.ulMenu li{
+    margin: 0 10px;
+}
+
+.ulMenu li a{
+    color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.buscador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.buscador input{
+    width: 80%;
+    height: 20px;
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.buscador i{
+    padding: 9px 8px;
+    color: green;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.enfermedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enfermedad{
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.imagenEnfermedad{
+    width: 30%;
+    padding: 0 5px;
+}
+
+.imagenEnfermedad img{
+    width: 100%;
+    background-size: contain;
+}
+
+.infoEnfermedad{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.infoEnfermedad a{
+    background-color: #4A754D;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px;
+    width: 60px;
+    text-align: center;
+}
