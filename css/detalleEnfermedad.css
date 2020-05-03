@@ -1,0 +1,58 @@
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+h2{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+h3{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.enfermedad{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.imagenEnfermedad{
+    width: 40%;
+    background-image: url("../img/covid-19Listado.jpg");
+    background-size: cover;
+    background-position: 45% 0;
+}
+
+.infoEnfermedad{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.infoEnfermedad a{
+    background-color: #4A754D;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px;
+    width: 60px;
+    text-align: center;
+}
+.textoAzul{
+    color: blue;
+}

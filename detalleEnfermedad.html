@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"> 
+    <script src="https://kit.fontawesome.com/dacf55610e.js"></script>
+    <link rel=StyleSheet href="./css/style.css" type="text/css" media=screen>
+    <link rel=StyleSheet href="./css/detalleEnfermedad.css" type="text/css" media=screen>
+    <title>COVID-19</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo_v1.png" alt="">
+            <h1>COVID-19</h1>
+            <input type="text">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+    <nav class="menu">
+        <ul class="ulMenu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="enfermedades.html">ENFERMEDADES</a></li>
+            <li><a href="vacunas.html">VACUNACIÓN</a></li>
+            <li><a href="hospitalesCercanos.html">HOSPITALES</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Coronavirus -COVID19-</h2>
+        <section>
+            <article class="enfermedad">
+                <div class="imagenEnfermedad">
+                </div>
+                    <p class="infoEnfermedad">
+                        Es una enfermedad infecciosa causada por el virus SARS-CoV-2.9​10​ Se detectó por primera vez en la ciudad china de Wuhan (provincia de Hubei), en diciembre de 2019.11​12​ Habiendo llegado a más de 100 territorios, el 11 de marzo de 2020 la Organización Mundial de la Salud la declaró pandemia.<br><br>
+                        Produce síntomas similares a los de la gripe, entre los que se incluyen fiebre, tos seca,14​ disnea, mialgia y fatiga.15​16​ En casos graves se caracteriza por producir neumonía, síndrome de dificultad respiratoria aguda,17​ sepsis18​ y choque séptico.No existe tratamiento específico; las medidas terapéuticas principales consisten en aliviar los síntomas y mantener las funciones vitales.<br><br>
+                        La transmisión del SARS-CoV-2 se produce mediante pequeñas gotas que se emiten al hablar, estornudar, toser o espirar, que al ser despedidas por un portador, pasan directamente a otra persona mediante la inhalación, o quedan sobre los objetos y superficies que rodean al emisor.
+                    </p>
+            </article>
+                <h3>FORMULARIO DE DETECCIÓN (TEST) DE CORONAVIRUS (COVID19)</h3>
+            <article class="test">
+                <div>
+                    <p>
+                        Hola usuario! Si tienes sintomas de COVID19 o has estado en contacto con una persona afectada deberias hacer un control y seguimiento diario de tus sintomas.<br><br>
+                        Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso.<br>
+                        El uso de este servicio supone la aceptación de los términos y la politica de privacidad descritos en <span class="textoAzul">Ver las condiciones y politicas
+                        </span>
+                    </p>
+                    <h4>SÍNTOMAS</h4>
+                    <div class="imgSintomas">
+                        <img src="img/24-fiebre-dolor-garganta.png" alt="">
+                        <img src="img/25-fiebre-dificultad-respirar.png" alt="">
+                        <img src="img/23-fiebre-tos.png" alt="">
+                    </div>
+                </div>
+                <form action="" method="POST">    
+                    <ul>
+                        <li>
+                            <label for="nombreApellido">Nombre y Apellido</label>
+                            <input type="text" id="nombreApellido" name="nombreApellido_usuario">
+                        </li>
+
+                        <li>
+                            <label for="dni">DNI</label>
+                            <input type="text" name="dni_usuario" id="dni">
+                        </li>
+
+                        <li>
+                            <label for="telefono"></label>
+                            <input type="text" id="telefono" name="telefono_usuario">
+                        </li>
+
+                        <li>
+                            <label for="ciudad"></label>
+                            <input type="text" id="ciudad" name="ciudad_usuario">
+                        </li>
+
+                        <li>
+                            <label for="sexo">Sexo</label>
+                            <input type="radio" name="sexo" value="Femenino"
+                            id="femenino">
+                            <label for="femenino">F</label>
+                            <input type="radio" name="sexo" value="Masculino"
+                            id="masculino">
+                            <label for="masculino">M</label>
+                        </li>
+
+                        <li>
+                            <label for="viajar">¿Has viajado al exterior de la Republica Argentina?</label>
+                            <input type="radio" name="viajar" id="viajar_si"
+                            value="true">
+                            <label for="viajar_si">Si</label>
+                            <input type="radio" name="viajar" id="viajar_no" value="false">
+                            <label for="viajar_no">No</label>
+                        </li>
+
+                        <li>
+                            <label for="paises_visitados">Paises visitados</label>
+                            <select name="paises" id="paises_visitados">
+                                <option value="brasil">Brasil</option>
+                                <option value="eeuu">Estados Unidos</option>
+                                <option value="italia">Italia</option>
+                                <option value="spain">España</option>
+                                <option value="china">China</option>
+                                <option value="japon">Japón</option>
+                            </select>
+                        </li>
+
+                        <p>Por favor, indica los sintomas que presentas:</p>
+                        <li>
+                            <label for="fiebre_grados">¿Tuviste Fiebre mayor a 38 grados?</label>
+                            <input type="radio" name="fiebre" id="fiebre_si" value="true">
+                            <input type="radio" name="fiebre" id="fiebre_no" value="false">
+                        </li>
+
+                        <li>
+                            <label for="fiebre_grados">¿Tuviste Dolor de cabeza?</label>
+                            <input type="radio" name="dolor_cabeza" id="dolor_cabeza_si" value="true">
+                            <input type="radio" name="dolor_cabeza" id="dolor_cabeza_no" value="false">
+                        </li>
+
+                        <li>
+                            <label for="fiebre_grados">¿Tuviste una tos persistente?</label>
+                            <input type="radio" name="tos" id="tos_si" value="true">
+                            <input type="radio" name="tos" id="tos_no" value="false">
+                        </li>
+
+                        <li>
+                            <label for="fiebre_grados">¿Tuviste Dolor de garganta?</label>
+                            <input type="radio" name="garganta_dolor" id="garganta_dolor_si" value="true">
+                            <input type="radio" name="garganta_dolor" id="garganta_dolor_no" value="false">
+                        </li>
+
+                        <li>
+                            <label for="fiebre_grados">¿Tuviste Dificultad para respirar?</label>
+                            <input type="radio" name="respirar_dificultad" id="respirar_dificultad_si" value="true">
+                            <input type="radio" name="respirar_dificultad" id="respirar_dificultad_no" value="false">
+                        </li>
+                        <li>
+                            <label for="direccion">Dirección</label>
+                            <input type="text" name="direccion_usuario" id="direccion">
+                        </li>
+                        <li>
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" name="ciudad_usuario" id="ciudad">
+                        </li>
+                    </ul>
+                </form>
+             </article>
+
+            <article>
+
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

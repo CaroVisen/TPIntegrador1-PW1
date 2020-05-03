@@ -40,6 +40,31 @@ header{
     color: #fff;
 }
 
+/* inicia NAV */
+
+.menu{
+    height: 40px;
+    background: #B5B5B5;
+}
+
+.ulMenu{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.ulMenu li{
+    margin: 0 10px;
+}
+
+.ulMenu li a{
+    color: rgb(255, 255, 255);
+}
+/* finaliza NAV */
+
 /* footer */
 
 footer{
