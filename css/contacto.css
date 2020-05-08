@@ -1,0 +1,73 @@
+h4,label,p{
+    color: #555;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacto article{
+    margin: 5% 10%;
+    border: solid 2px #ABEDB6;
+    border-radius: 5px;
+    padding: 3%;
+    height: 40%;
+    width: 40%;
+}
+
+.contacto h4{
+margin-bottom: 3%;
+}
+
+.contacto label,input{
+    margin-bottom: 2%;
+}
+
+.form input, textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #555;
+}
+
+.form input:hover, textarea:hover{
+    border-color: #ABEDB6;
+    background-color: #BBB;
+}
+
+.datos p{
+    margin-bottom: 3.5%;
+}
+
+.datos i{
+    margin: 1%;
+    color: #555;
+}
+
+.ubicacion article{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 2px #ABEDB6;
+    border-radius: 5px;
+    padding: 3%;
+    height: 40%;
+    width: 75%;
+}
+
+.ubicacion iframe{
+    width: 100%;
+}
+
+.ubicacion h4{
+    text-align: center;
+    color:#555;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    .contacto article{
+        margin: 5% 5%;
+    }
+}

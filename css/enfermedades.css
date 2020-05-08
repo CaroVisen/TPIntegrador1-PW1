@@ -24,7 +24,7 @@ h2{
 .buscador input{
     width: 80%;
     height: 20px;
-    border:solid 1px #ccc;
+    border:solid 1px #555;
     border-radius: 5px;
     font-size: 0.8em;
     padding: 5px;
@@ -32,7 +32,11 @@ h2{
 
 .buscador i{
     padding: 9px 8px;
-    color: green;
+    color: #BDFFA7;
+    background-color: #555;
+    border-radius: 5px;
+    margin-right: 1%;
+    padding: 5px;
 }
 
 section{
@@ -71,10 +75,18 @@ section{
 }
 
 .infoEnfermedad a{
-    background-color: #4A754D;
+    background-color: #BDFFA7;
     border-radius: 5px;
-    color: #fff;
+    color: #555;
     padding: 4px;
     width: 60px;
     text-align: center;
+    border: solid 2px #555;
+}
+
+@media only screen and (max-width: 768px){
+   
+    .enfermedad{
+        width: 90%;
+    }
 }

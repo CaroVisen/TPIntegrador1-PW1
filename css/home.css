@@ -6,14 +6,23 @@
     border-radius: 5px;
 }
 
-.redirecciones{
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
 .redirecciones h2{
     text-align: center;
 }
+
+.redirecciones{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.redi{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
 
 h3{
     text-align: center;
@@ -68,13 +77,16 @@ h3{
 }
 
 .llamaAl{
-    height: 177px;
     background-color: rgb(189, 255,  167, 0.5);
     margin: 5% 15% 10% 15%;
     border: solid #555;
     border-radius: 5px;
     color: #555;
     padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .llamaAl p{
@@ -92,8 +104,51 @@ h3{
 }
 
 .siTenesSintomas{
-    vertical-align: middle;
-    height: 100%;
     margin-right: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+@media only screen and (max-width: 768px) {
+
+    h3{
+        font-size: 0.5em;
+    }
+
+    .llamaAl{
+        margin: 5% 5% 10% 5%;
+    }
+
+    .llamaAl p{
+        font-size: 19px;
+    }
+
+    .tel span{
+        font-size: 1em;
+    }
+
+    .llamaAl i{
+        font-size: 2em;
+    }
+
+    .enfermedades i{
+        font-size: 3em;
+        color: #555;
+        width: 5%;
+        padding-bottom: 15%;
+    }
+    
+    .vacunas i{
+        font-size: 3em;
+        color: #555;
+        width: 5%;
+        padding-bottom: 15%;
+    }
+    
+    .hospitales i{
+        font-size: 3em;
+        color: #555;
+        width: 5%;
+        padding-bottom: 15%;
+    }
+  }
