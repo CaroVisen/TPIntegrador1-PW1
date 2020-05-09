@@ -64,6 +64,7 @@ section{
 .imagenEnfermedad img{
     width: 100%;
     background-size: contain;
+    border-radius: 5px;
 }
 
 .infoEnfermedad{
@@ -88,5 +89,30 @@ section{
    
     .enfermedad{
         width: 90%;
+        display: block;
     }
+
+    .imagenEnfermedad{
+        width: 90%;
+        margin: 5%;
+    }
+
+    .infoEnfermedad{
+        width: 90%;
+        margin: 5%;
+    }
+
+    .infoEnfermedad h3{
+        text-align: center;
+    }
+
+    .infoEnfermedad p{
+        margin: 5%;
+        text-align: justify;
+    }
+
+    .infoEnfermedad a{
+        align-self: center;
+    }
+
 }

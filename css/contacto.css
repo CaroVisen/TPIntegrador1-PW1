@@ -68,6 +68,16 @@ margin-bottom: 3%;
 
 @media only screen and (max-width: 768px) {
     .contacto article{
-        margin: 5% 5%;
+        width: 80%;
+        margin: 5%;
+    }
+
+    .contacto{
+        display: block;
+    }
+
+    .ubicacion article{
+        width: 80%;
+        margin: 5%;
     }
 }

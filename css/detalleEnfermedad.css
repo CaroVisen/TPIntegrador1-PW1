@@ -1,58 +1,137 @@
-main{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
- 
 h2{
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-h3{
-    margin-top: 40px;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 2%;
+    text-decoration: underline;
+    font-size: 2em;
+    color: #555;
 }
 
-section{
-    width: 90%;
+h4{
+    margin: 3%;
+    text-decoration: underline;
+}
+
+.fotoDesc{
+    text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-
-.enfermedad{
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.imagenEnfermedad{
-    width: 40%;
-    background-image: url("../img/covid-19Listado.jpg");
-    background-size: cover;
-    background-position: 45% 0;
-}
-
-.infoEnfermedad{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 15px;
-}
-
-.infoEnfermedad a{
-    background-color: #4A754D;
+.fotoDesc img{
+    width: 30%;
+    margin: 5%;
     border-radius: 5px;
-    color: #fff;
-    padding: 4px;
-    width: 60px;
-    text-align: center;
+    border: solid #555;
 }
-.textoAzul{
-    color: blue;
+
+.fotoDesc p{
+    color: #555;
+    margin: 5%;
+    text-align: justify;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.formulario article{
+    width: 40%;
+    margin: 5%;
+}
+
+.formulario article p{
+    text-align: center;
+    color: #555;
+}
+
+.formulario img{
+    width: 30%;
+}
+
+.sintomas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form input, select{
+    margin: 2%;
+    border-radius: 5px;
+    border: solid 1px #555;
+    height: 2em;
+    padding: 0.5%;
+}
+
+.form p{
+    display: inline-block;
+    color: #555;
+    font-size: 1em;
+}
+
+.form button{
+    background-color: #555;
+    border: solid 1px #BDFFA7;
+    border-radius: 5px;
+    color: #BDFFA7;
+    padding: 2%;
+    margin: 1%;
+    margin-left: 75%;
+}
+
+#nombreApellido{
+    width: 95%;
+}
+
+#dni, #telefono, #ciudad, #direccion, #ciudad2{
+    margin: 1.5%;
+    width: 45%;
+}
+
+#ciudad{
+    margin-right: 4%;
+}
+
+#viajar{
+    font-size: 0.9em;
+}
+
+#paises_visitados{
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .fotoDesc{
+        display: block;
+    }
+
+    .fotoDesc img{
+        width: 80%;
+        margin: 5%;
+        border-radius: 5px;
+        border: solid #555;
+    }
+
+    .formulario{
+        display: block;
+    }
+    .formulario article{
+        width: 90%;
+        margin: 5%;
+    }
+
+    #nombreApellido, #dni, #telefono, #ciudad, #direccion, #ciudad2, #paises_visitados{
+        width: 95%;
+    }
+
+    .form button{
+        width: 50%;
+        margin: 5% 25%;
+    }
 }
