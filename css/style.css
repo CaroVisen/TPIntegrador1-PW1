@@ -3,6 +3,15 @@
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
+    list-style: none;
+}
+
+a{
+    color: #fff
+}
+
+.link-hover:hover{
+    color:#BDFFA7;
 }
 
 /* header */
@@ -52,15 +61,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
 }
 
 .ulMenu li{
     margin: 0 10px;
-}
-
-.ulMenu li a{
-    color: rgb(255, 255, 255);
 }
 
 .movilNav{
@@ -78,12 +82,90 @@
 footer{
     background-color: #555;
     height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.integrantes li{
+    color: white;
+    font-size: 1.2em;
+}
+
+footer p{
+    color: #ABEDB6;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer li{
+    margin-bottom: 5px;
+}
+
+.redes-footer{
+    display: flex
+}
+
+.fb-link{
+ background-image: url("../img/fb-logo.jpg");
+}
+
+.tw-link{
+    background-image: url("../img/tw-logo.jpg");
+}
+
+.ig-link{
+    background-image: url("../img/ig-logo.jpg");
+}
+
+#redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#redes-sociales a{
+    width: 48px; 
+    height: 48px; 
+    background-image: url("../img/redes-sprite.jpg");
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.redes-container{
+    display: flex;
+}
+
+#redes-sociales #footer-fb {
+    background-position: -62px -63px;
+}
+
+#redes-sociales #footer-tw {
+    background-position: -3.6px -63px;
+}
+
+#redes-sociales #footer-ig {
+    background-position: -119px -63px;
 }
 
 @media only screen and (max-width: 768px) {
 
     footer{
-        height: 50px;
+        height: 90px;
+    }
+
+    #menu-inferior{
+        display: none;
+    }
+
+    #redes-sociales p{
+        display: none;
+    }
+
+    .integrantes li{
+        color: white;
+        font-size: 0.7em;
     }
 
     .logo h1{
@@ -107,5 +189,4 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
     }
-
-  }
+}

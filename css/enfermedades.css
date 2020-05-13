@@ -85,6 +85,10 @@ section{
     border: solid 2px #555;
 }
 
+.infoEnfermedad a:hover{
+    background-color: #fff;
+}
+
 @media only screen and (max-width: 768px){
    
     .enfermedad{
