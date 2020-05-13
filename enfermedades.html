@@ -15,8 +15,14 @@
         <div class="logo">
             <img src="./img/logo_v1.png" alt="">
             <h1>COVID-19</h1>
-            <input type="text">
+            <input type="search" class="fontAwesome" name="buscaEnfermedad" list="listaEnfermedades">
             <i class="fas fa-search"></i>
+            <datalist id="listaEnfermedades">
+                <option value="Coronavirus"></option>
+                <option value="Resfriado común"></option>
+                <option value="Sarampión"></option>
+                <option value="VIH"></option>
+            </datalist>
         </div>
     </header>
     <nav class="menu">
@@ -41,7 +47,13 @@
         <h2>ENFERMEDADES</h2>
         <div class="buscador"> 
             <i class='fas fa-search'></i>
-            <input type="text" placeholder="Filtrar por enfermedad" class="fontAwesome">
+            <input type="search" placeholder="Filtrar por enfermedad" class="fontAwesome" name="buscaEnfermedad" list="listaEnfermedades">
+            <datalist id="listaEnfermedades">
+                <option value="Coronavirus - COVID-19"></option>
+                <option value="Resfriado común"></option>
+                <option value="Sarampión"></option>
+                <option value="VIH"></option>
+            </datalist>
         </div>
         </div>
         <section class="enfermedades">
