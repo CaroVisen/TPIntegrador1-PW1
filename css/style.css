@@ -32,7 +32,11 @@ a{
 
 .logo h1{
     color: #BDFFA7;
-    margin-right: 7%;
+    margin-right: 40px;
+    font-size: 1.6em;
+    width:120px;
+    border:solid 1px white;
+    text-align: center;
 }
 
 .logo input{
@@ -169,7 +173,8 @@ footer li{
     }
 
     .logo h1{
-        font-size: 1.2em;
+        font-size: 1.1em;
+        width: 120px;
     }
 
     .menu{
@@ -189,4 +194,8 @@ footer li{
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+.activo{
+    color:#BDFFA7 !important;
 }
