@@ -9,6 +9,7 @@
     <title>COVID-19</title>
 </head>
 <body>
+    <script src="./js/contacto.js"></script>
     <script src="https://kit.fontawesome.com/dacf55610e.js"></script>   
     <header>
         <div class="logo">
@@ -44,23 +45,26 @@
     </nav> 
     <main>
         <section class="contacto">
-            <article class="form">
+            <article class="form" onsubmit="return validar()" >
+                <form action="#">
                 <h4>CONTACTO</h4>
-                <label for="">Nombre</label>
+                <label id="lbl_nombre">Nombre</label>
                 <br>
-                <input type="text">
+                <input type="text" id="nombre">
                 <br>
-                <label for="">Edad</label>
+                <label>Edad</label>
                 <br>
-                <input type="number">
+                <input type="number" id="edad">
                 <br>
-                <label for="">Mail</label>
+                <label>Mail</label>
                 <br>
-                <input type="email">
+                <input type="email" id="email">
                 <br>
-                <label for="">Mensaje</label>
+                <label id="lbl_mensaje">Mensaje</label>
                 <br>
-                <textarea cols="30" rows="10"></textarea>
+                <textarea cols="30" rows="10" id="mensaje" onkeydown="caracteresRestantes()"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
             </article>
             <article class="datos"> 
                 <h4>DATOS DE CONTACTO</h4>

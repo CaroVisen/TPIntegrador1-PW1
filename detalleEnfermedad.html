@@ -9,6 +9,7 @@
     <link rel=StyleSheet href="./css/style.css" type="text/css" media=screen>
     <link rel=StyleSheet href="./css/detalleEnfermedad.css" type="text/css" media=screen>
     <link rel="icon" type="image/png" href="./img/fav.icon.png">
+
     <title>COVID-19</title>
 </head>
 <body>
@@ -70,7 +71,7 @@
                     </div>
                 </article>
                 <article class="form">
-                    <form action="">
+                    <form action="#" onsubmit="return validar()">
                         <input type="text" id="nombreApellido" name="nombreApellido_usuario" placeholder="Nombre y Apellido"><br>
 
                         <input type="text" name="dni_usuario" id="dni" placeholder="DNI">
@@ -124,7 +125,7 @@
                         <input type="text" name="direccion_usuario" id="direccion" placeholder="Direccion">
 
                         <input type="text" name="ciudad_usuario" id="ciudad2" placeholder="Ciudad">
-
+                        <p id="error"></p>
                         <button type="submit">Enviar Test</button>
                     </form>
                 </article>
