@@ -56,14 +56,14 @@
         </section>
         <section>
             <h2>FORMULARIO DE DETECCION DE CORONAVIRUS</h2>
-            <div class="formulario">
+            <div class="contenedor-detalle">
                 <article>
                     <div>
                         <P>Hola usuario! Si tienes síntomas de XXXX o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas. 
                             Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en 'Ver las condiciones y políticas'
                         </P>
                     </div>
-                    <h4>SINTOMAS</h4>
+                    <h4>SÍNTOMAS</h4>
                     <div class="sintomas">  
                         <img src="./img/23-fiebre-tos.png" alt="">
                         <img src="./img/24-fiebre-dolor-garganta.png" alt="">
@@ -71,7 +71,7 @@
                     </div>
                 </article>
                 <article class="form">
-                    <form action="#" onsubmit="return validar()">
+                    <form action="#" onsubmit='return validar()'>
                         <input type="text" id="nombreApellido" name="nombreApellido_usuario" placeholder="Nombre y Apellido"><br>
 
                         <input type="text" name="dni_usuario" id="dni" placeholder="DNI">
@@ -129,13 +129,28 @@
                         <button type="submit">Enviar Test</button>
                     </form>
                 </article>
-            </div>
+            </div> 
         </section>
-        <section>
-
+        <section class="contenedor-detalle d-flex justify-center">
+            <article class="medidas-article">
+                <h4>MEDIDAS DE PRECAUCIÓN</h4>
+                <div class="medidas">
+                    <img src="./img/14-lavarse-manos.png" alt="">
+                    <img src="./img/16-tocar-nariz.png" alt="">
+                    <img src="./img/15-estornudar.png" alt="">
+                    <img src="./img/17-ventilar.png" alt="">
+                </div>
+                <div class="medidas">
+                <img src="./img/18-limpiar-objetos.png" alt="">
+                    <img src="./img/20-reducir-contacto.png" alt="">
+                    <img src="./img/19-permanecer-domicilio.png" alt="">
+                    <img src="./img/21-no-compartir-mate.png" alt="">
+                </div>
+            </article>
         </section>
         <aside>
-
+            <h4>HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h4>
+            
         </aside>
     </main>
     <footer>

@@ -198,3 +198,11 @@ footer li{
 .activo{
     color:#BDFFA7 !important;
 }
+
+.d-flex{
+    display: flex !important;
+}
+
+.justify-center{
+    justify-content: center !important;
+}

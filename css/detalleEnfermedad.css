@@ -31,24 +31,23 @@ h4{
     text-align: justify;
 }
 
-.formulario{
+.contenedor-detalle{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
-.formulario article{
+.contenedor-detalle article{
     width: 40%;
     margin: 5%;
 }
 
-.formulario article p{
+.contenedor-detalle article p{
     text-align: center;
     color: #555;
 }
 
-.formulario img{
+.contenedor-detalle img{
     width: 30%;
 }
 
@@ -57,6 +56,24 @@ h4{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.medidas{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.medidas-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100% !important; 
+}
+
+.medidas img{
+    width:20%;
 }
 
 .form input, select{
@@ -118,10 +135,10 @@ h4{
         border: solid #555;
     }
 
-    .formulario{
+    .contenedor-detalle{
         display: block;
     }
-    .formulario article{
+    .contenedor-detalle article{
         width: 90%;
         margin: 5%;
     }
