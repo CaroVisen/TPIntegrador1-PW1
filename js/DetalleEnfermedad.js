@@ -1,4 +1,3 @@
-
 function validar(){
 
     var errorRadioMsg = document.getElementById("error-radio-btn")
@@ -17,6 +16,7 @@ function validar(){
     var errorInput = false
 
     var form = document.getElementById("formDetalle")
+    var contadorSintomas = 0;
     
     let fiebre = document.getElementsByName("fiebre")
     let dolorCabeza = document.getElementsByName("dolor_cabeza")
@@ -33,6 +33,10 @@ function validar(){
     ]
 
     arrayRadioButtons.forEach(element => {
+        if(element[0].checked == true){
+            contadorSintomas++
+        }
+
         if(element[0].checked == false && element[1].checked == false){
             errorRadioBtn = true
             error = true
@@ -76,5 +80,37 @@ function validar(){
         form.insertBefore(div, document.getElementById("fiebreMayor"))
     }
 
-    return (!error)
+    if(error == false){
+        console.log("sin errores")
+        let div = document.createElement("div")
+        let msg = document.createTextNode(`El formulario fue completado correctamente. ${contadorSintomas} síntomas de COVID-19 fueron registrados`)
+        div.appendChild(msg)
+        div.style.color = "green"
+        div.style.border = "2px solid"
+        div.style.textAlign = "center"
+
+        form.appendChild(div)
+    }
+
+    return false;
+}
+
+function ocultarPaises(){
+    document.getElementById("paises_visitados").style.display = "none"
+    document.getElementById("labelPaises").style.display = "none"
+}
+
+function mostrarPaises(){
+    document.getElementById("paises_visitados").style.display = "block"
+    document.getElementById("labelPaises").style.display = "block"
+}
+
+function ocultarDireccion(){
+    document.getElementById("direccion").style.display = "none"
+    document.getElementById("direccion").style.display = "none"
+}
+
+function mostrarDireccion(){
+    document.getElementById("direccion").style.display = "block"
+    document.getElementById("direccion").style.display = "block"
 }

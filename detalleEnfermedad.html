@@ -57,13 +57,13 @@
             </div>
         </section>
         <section>
-            <h2>FORMULARIO DE DETECCION DE CORONAVIRUS</h2>
+            <h2 id="formularioTitle">FORMULARIO DE DETECCION DE CORONAVIRUS</h2>
             <div class="contenedor-detalle">
                 <article>
                     <div>
-                        <P>Hola usuario! Si tienes síntomas de XXXX o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas. 
+                        <p id="textoForm">Hola usuario! Si tienes síntomas de XXXX o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas. 
                             Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en 'Ver las condiciones y políticas'
-                        </P>
+                        </p>
                     </div>
                     <h4>SÍNTOMAS</h4>
                     <div class="sintomas">  
@@ -86,13 +86,13 @@
                         <input type="radio" name="sexo" value="Femenino" id="femenino"><p>F</p>
                         <input type="radio" name="sexo" value="Masculino" id="masculino"><P>M</P><br>
 
-                        <label for="viajar" id="viajar">¿Has viajado al exterior de la Republica Argentina?</label>
-                        <input type="radio" name="viajar" id="viajar_si" value="true">
+                        <label for="viajar">¿Has viajado al exterior de la Republica Argentina?</label>
+                        <input type="radio" name="viajar" id="viajar_si" value="true" onclick="mostrarPaises()">
                         <label for="viajar_si">Si</label>
-                        <input type="radio" name="viajar" id="viajar_no" value="false">
+                        <input type="radio" name="viajar" id="viajar_no" value="false" onclick="ocultarPaises()">
                         <label for="viajar_no">No</label><br>
 
-                        <label for="paises_visitados">Paises visitados</label>
+                        <label for="paises_visitados" id="labelPaises">Paises visitados</label>
                         <select name="paises" id="paises_visitados">
                             <option value="brasil">Brasil</option>
                             <option value="eeuu">Estados Unidos</option>
@@ -121,14 +121,14 @@
                         <input type="radio" name="garganta_dolor" value="false">No<br>
 
                         <label for="fiebre_grados">¿Tuviste Dificultad para respirar?</label>
-                        <input type="radio" name="respirar_dificultad" value="true">Si
-                        <input type="radio" name="respirar_dificultad" value="false">No<br>
+                        <input type="radio" id="dificultar_si" name="respirar_dificultad" value="true" onclick="mostrarDireccion()">Si
+                        <input type="radio" id="dificultad_no" name="respirar_dificultad" value="false" onclick="ocultarDireccion()">No<br>
 
                         <input type="text" name="direccion_usuario" id="direccion" placeholder="Direccion">
 
                         <input type="text" name="ciudad_usuario" id="ciudad2" placeholder="Ciudad">
                         <p id="error"></p>
-                        <button type="submit">Enviar Test</button>
+                        <button type="submit" onclick="mostrarMensaje()">Enviar Test</button>
                     </form>
                 </article>
             </div> 
@@ -151,8 +151,6 @@
             </article>
         </section>
         <aside>
-            <h4>HOSPITAL MAS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h4>
-            
         </aside>
     </main>
     <footer>
