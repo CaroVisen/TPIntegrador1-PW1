@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"> 
-    <script src="https://kit.fontawesome.com/dacf55610e.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel=StyleSheet href="./css/style.css" type="text/css" media=screen>
     <link rel=StyleSheet href="./css/detalleEnfermedad.css" type="text/css" media=screen>
     <link rel="icon" type="image/png" href="./img/fav.icon.png">
+
+    <script src="./js/DetalleEnfermedad.js"></script>
+    <script src="https://kit.fontawesome.com/dacf55610e.js"></script>
 
     <title>COVID-19</title>
 </head>
@@ -70,13 +72,13 @@
                         <img src="./img/25-fiebre-dificultad-respirar.png" alt="">
                     </div>
                 </article>
-                <article class="form">
-                    <form action="#" onsubmit='return validar()'>
+                <article class="form" onsubmit="return validar()">
+                    <form id="formDetalle" action="#">
                         <input type="text" id="nombreApellido" name="nombreApellido_usuario" placeholder="Nombre y Apellido"><br>
 
                         <input type="text" name="dni_usuario" id="dni" placeholder="DNI">
 
-                        <input type="tel" id="telefono" name="telefono_usuario" placeholder="Telefono"><br>
+                        <input type="text" id="telefono" name="telefono_usuario" placeholder="Telefono"><br>
 
                         <input type="text" id="ciudad" name="ciudad_usuario" placeholder="Ciudad">
 
@@ -100,27 +102,27 @@
                             <option value="japon">Japón</option>
                         </select>
 
-                        <p>Por favor, indica los sintomas que presentas:</p><br>
+                        <p>Por favor, indica los sintomas que presentas:</p><br><br>
 
-                        <label for="fiebre_grados">¿Tuviste Fiebre mayor a 38 grados?</label>
-                        <input type="radio" name="fiebre" id="fiebre_si" value="true">Si
-                        <input type="radio" name="fiebre" id="fiebre_no" value="false">No<br>
+                        <label id= "fiebreMayor" for="fiebre_grados">¿Tuviste Fiebre mayor a 38 grados?</label>
+                        <input id="fiebre_si" type="radio" name="fiebre" value="true">Si
+                        <input type="radio" name="fiebre" value="false">No<br>
 
                         <label for="fiebre_grados">¿Tuviste Dolor de cabeza?</label>
-                        <input type="radio" name="dolor_cabeza" id="dolor_cabeza_si" value="true">Si
-                        <input type="radio" name="dolor_cabeza" id="dolor_cabeza_no" value="false">No<br>
+                        <input type="radio" name="dolor_cabeza" value="true">Si
+                        <input type="radio" name="dolor_cabeza" value="false">No<br>
 
                         <label for="fiebre_grados">¿Tuviste una tos persistente?</label>
-                        <input type="radio" name="tos" id="tos_si" value="true">Si
-                        <input type="radio" name="tos" id="tos_no" value="false">No<br>
+                        <input type="radio" name="tos" value="true">Si
+                        <input type="radio" name="tos" value="false">No<br>
 
                         <label for="fiebre_grados">¿Tuviste Dolor de garganta?</label>
-                        <input type="radio" name="garganta_dolor" id="garganta_dolor_si" value="true">Si
-                        <input type="radio" name="garganta_dolor" id="garganta_dolor_no" value="false">No<br>
+                        <input type="radio" name="garganta_dolor" value="true">Si
+                        <input type="radio" name="garganta_dolor" value="false">No<br>
 
                         <label for="fiebre_grados">¿Tuviste Dificultad para respirar?</label>
-                        <input type="radio" name="respirar_dificultad" id="respirar_dificultad_si" value="true">Si
-                        <input type="radio" name="respirar_dificultad" id="respirar_dificultad_no" value="false">No<br>
+                        <input type="radio" name="respirar_dificultad" value="true">Si
+                        <input type="radio" name="respirar_dificultad" value="false">No<br>
 
                         <input type="text" name="direccion_usuario" id="direccion" placeholder="Direccion">
 

@@ -18,7 +18,7 @@ function validar(){
         document.getElementById("lbl_nombre").style.color="#ff0000";
         error = true;
     }else if(!regexCampoTelefono.test(telefono)){
-        document.getElementById("lbl_telefono").innerHTML="El telefono debe contenes el siguiente formato: 1234-5678";
+        document.getElementById("lbl_telefono").innerHTML="El teléfono debe contener el siguiente formato: 1234-5678";
         document.getElementById("lbl_telefono").style.color="#ff0000";
         error = true;
     }else if(!regexCampoEmail.test(mail)){
