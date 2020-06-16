@@ -120,6 +120,15 @@ h4{
 #paises_visitados{
     width: 50%;
     margin-bottom: 5%;
+    display: none;
+}
+
+#labelPaises{
+    display: none;
+}
+
+#direccion{
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {

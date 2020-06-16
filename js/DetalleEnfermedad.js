@@ -107,10 +107,8 @@ function mostrarPaises(){
 
 function ocultarDireccion(){
     document.getElementById("direccion").style.display = "none"
-    document.getElementById("direccion").style.display = "none"
 }
 
 function mostrarDireccion(){
-    document.getElementById("direccion").style.display = "block"
     document.getElementById("direccion").style.display = "block"
 }

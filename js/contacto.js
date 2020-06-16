@@ -40,7 +40,7 @@ function validar(){
         document.getElementById("lbl_mensaje").style.color="#555";
         error = false;
     }
-
+    
    return !error;
 }
 
