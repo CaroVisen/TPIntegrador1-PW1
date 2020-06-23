@@ -3,7 +3,6 @@ $(document).ready(function(){
         $('#popup').fadeIn('slow');
         $('.popup-overlay').fadeIn('slow');
         $('.popup-overlay').height($(window).height());
-        return false;
     });
  
     $('#close').on('click', function(){
@@ -16,7 +15,6 @@ $(document).ready(function(){
         $('#popup2').fadeIn('slow');
         $('.popup-overlay').fadeIn('slow');
         $('.popup-overlay').height($(window).height());
-        return false;
     });
  
     $('#close2').on('click', function(){
@@ -29,7 +27,6 @@ $(document).ready(function(){
         $('#popup3').fadeIn('slow');
         $('.popup-overlay').fadeIn('slow');
         $('.popup-overlay').height($(window).height());
-        return false;
     });
  
     $('#close3').on('click', function(){
