@@ -206,3 +206,19 @@ footer li{
 .justify-center{
     justify-content: center !important;
 }
+
+.container{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container a{
+    color: black !important;
+}
+
+.sectTitle{
+    margin-bottom: 40px;
+}
