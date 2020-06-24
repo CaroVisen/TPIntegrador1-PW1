@@ -70,10 +70,6 @@ a{
     margin: 0 10px;
 }
 
-.movilNav{
-    display: none;
-}
-
 .dropdown{
     display: none;
 } 
@@ -193,6 +189,10 @@ footer li{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .navText{
+        display: none;
+    }
 }
 
 .activo{
@@ -221,4 +221,8 @@ footer li{
 
 .sectTitle{
     margin-bottom: 40px;
+}
+
+.navText{
+    margin-left: 5px;
 }
